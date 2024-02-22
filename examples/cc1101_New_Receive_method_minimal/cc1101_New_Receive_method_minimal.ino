@@ -9,7 +9,6 @@ void setup(){
 
     Serial.begin(9600);
 
-    cc1101_driver.Init();
     if (cc1101_driver.getCC1101()){         // Check the CC1101 Spi connection.
     Serial.println("Connection OK");
     }else{
