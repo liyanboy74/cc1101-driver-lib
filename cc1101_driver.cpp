@@ -525,7 +525,7 @@ clb4[1]=e;
 *OUTPUT       :none
 ****************************************************************/
 bool CC1101_DRIVER::getCC1101(void){
-Init();
+SpiInit();
 if (SpiReadStatus(0x31)>0){
 return 1;
 }else{
